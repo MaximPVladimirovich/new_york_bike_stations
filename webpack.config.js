@@ -22,7 +22,7 @@ const CONFIG = {
   mode: 'production',
 
   entry: {
-    app: './src/app.js'
+    app: './dist/index.html'
   },
   devServer: {
     static: path.join(__dirname, 'src')
