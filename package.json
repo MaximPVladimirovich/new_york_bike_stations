@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "webpack serve --progress --hot --open",
-    "build": "npm install && webpack --progress"
+    "build": "npm install && npx webpack build --config ./webpack.config.js"
   },
   "dependencies": {
     "@deck.gl/core": "^8.7.0",

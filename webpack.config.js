@@ -19,10 +19,10 @@ const webpack = require('webpack');
 const dotenv = require('dotenv-webpack');
 
 const CONFIG = {
-  mode: 'development',
+  mode: 'production',
 
   entry: {
-    app: './src/app.js'
+    app: './dist/app.js'
   },
   devServer: {
     static: path.join(__dirname, 'src')
