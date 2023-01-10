@@ -21,7 +21,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CONFIG = {
   mode: 'production',
 
-  entry: './src/index.html',
+  entry: './src/app.js',
   devServer: {
     static: path.join(__dirname, 'src')
   },
