@@ -23,6 +23,7 @@ loadJSAPI(); // loads the Maps JS API - see helper function below
 // initialize the map and executes your code
 // once the API has loaded
 function runApp() {
+  console.log('Google Maps API loaded', googleMapsAPIKey)
   const map = initMap();
   const layerOptions = {
     id: 'scatter-plot',

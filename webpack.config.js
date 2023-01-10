@@ -29,14 +29,12 @@ const CONFIG = {
     new CopyPlugin({
       patterns: [
         { from: "./src/big_query.json", to: "big_query.json" },
-        { from: "./src/styles/styles.css", to: "styles/style.css" },
+        { from: "./src/styles/styles.css", to: "styles/styles.css" },
         // "path/to/source", // absolute or relative, files/directories/globs - see below for examples
       ],
     }),
     new dotenv()
   ]
-  // Add big_query.json to build folder.
-
 };
 
 export default CONFIG;
