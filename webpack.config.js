@@ -15,11 +15,11 @@
  */
 
 const path = require('path')
-const webpack = require('webpack');
 const dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const CONFIG = {
-  mode: 'development',
+  mode: 'production',
 
   entry: {
     app: './src/app.js'
@@ -28,6 +28,7 @@ const CONFIG = {
     static: path.join(__dirname, 'src')
   },
   plugins: [
+    new HtmlWebpackPlugin(),
     new dotenv()
   ]
 };
