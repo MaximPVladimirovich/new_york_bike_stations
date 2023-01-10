@@ -16,7 +16,7 @@ import { GoogleMapsOverlay } from "@deck.gl/google-maps";
  * limitations under the License.
  */
 
-const googleMapsAPIKey = process.env.GOOGLE_MAPS_API_LEY
+const googleMapsAPIKey = process.env.GOOGLE_MAPS_API_KEY
 
 loadJSAPI(); // loads the Maps JS API - see helper function below
 
