@@ -14,21 +14,18 @@
  * limitations under the License.
  */
 
-const path = require('path')
-const dotenv = require('dotenv-webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import path from 'path';
+import dotenv from 'dotenv-webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const CONFIG = {
   mode: 'production',
 
   entry: './src/app.js',
-  devServer: {
-    static: path.join(__dirname, 'src')
-  },
   plugins: [
     new HtmlWebpackPlugin(),
     new dotenv()
   ]
 };
 
-module.exports = CONFIG;
+export default CONFIG;
