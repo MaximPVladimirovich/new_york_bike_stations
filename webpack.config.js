@@ -29,6 +29,7 @@ const CONFIG = {
     new CopyPlugin({
       patterns: [
         { from: "./src/big_query.json", to: "big_query.json" },
+        { from: "./src/styles/styles.css", to: "styles/style.css" },
         // "path/to/source", // absolute or relative, files/directories/globs - see below for examples
       ],
     }),
