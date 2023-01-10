@@ -5,9 +5,18 @@ body {
     padding: 0px;
     font-family: sans-serif;
 }
+
 #map {
     height: 100%;
+    margin: 2rem
 }
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
 #tooltip {
     pointer-events: none;
     font-family: sans-serif;
