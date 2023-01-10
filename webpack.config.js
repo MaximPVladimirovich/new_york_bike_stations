@@ -3,9 +3,8 @@
 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
-
- *  https://www.apache.org/licenses/LICENSE-2.0
+ You may obtain a copy of the License at
+*  https:ww.apache.org/licenses/LICENSE-2.0
 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,6 +16,7 @@
 import path from 'path';
 import dotenv from 'dotenv-webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyPlugin from 'copy-webpack-plugin';
 
 const CONFIG = {
   mode: 'production',
@@ -26,8 +26,16 @@ const CONFIG = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/big_query.json", to: "big_query.json" },
+        // "path/to/source", // absolute or relative, files/directories/globs - see below for examples
+      ],
+    }),
     new dotenv()
   ]
+  // Add big_query.json to build folder.
+
 };
 
 export default CONFIG;

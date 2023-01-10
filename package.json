@@ -12,6 +12,7 @@
     "@deck.gl/google-maps": "^8.7.0",
     "@deck.gl/layers": "^8.7.0",
     "@googlemaps/js-api-loader": "1.13.9",
+    "copy-webpack-plugin": "^11.0.0",
     "dotenv-webpack": "^8.0.1",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.70.0",
