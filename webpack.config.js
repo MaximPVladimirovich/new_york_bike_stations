@@ -23,7 +23,9 @@ const CONFIG = {
 
   entry: './src/app.js',
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
     new dotenv()
   ]
 };
