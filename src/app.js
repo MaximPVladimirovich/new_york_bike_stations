@@ -16,14 +16,11 @@ import { GoogleMapsOverlay } from "@deck.gl/google-maps";
  * limitations under the License.
  */
 
-const googleMapsAPIKey = process.env.GOOGLE_MAPS_API_KEY
-
 loadJSAPI(); // loads the Maps JS API - see helper function below
 
 // initialize the map and executes your code
 // once the API has loaded
 function runApp() {
-  console.log('Google Maps API loaded', googleMapsAPIKey)
   const map = initMap();
   const layerOptions = {
     id: 'scatter-plot',
@@ -48,6 +45,7 @@ function runApp() {
 
 /* API and map loader helpers */
 function loadJSAPI() {
+  const googleMapsAPIKey = process.env.GOOGLE_MAPS_API_KEY
   const googleMapsAPIURI = `https://maps.googleapis.com/maps/api/js?key=${googleMapsAPIKey}&callback=runApp`;
   const script = document.createElement('script');
 
