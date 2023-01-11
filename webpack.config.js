@@ -24,7 +24,7 @@ const CONFIG = {
   entry: './src/app.js',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: 'src/index.html'
     }),
     new CopyPlugin({
       patterns: [
